@@ -1,0 +1,14 @@
+https://github.com/franklinn008/body-mass-index-bmi-calculator.git
+print('hello! welcome to BMI index platform\n')
+height = (input('enter your height in m:\n '))
+weight = (input('enter your weight in kg:\n '))
+
+bmi = int(weight)/float(height)**2
+if bmi<=18.5:
+ print(f'your bmi is {round(bmi)}, you are underweight')
+elif bmi> 18.5 and bmi<=25:
+ print(f'your bmi is {round(bmi)}, you are of normal weight')
+elif bmi>25 and bmi<=30:
+ print(f'your bmi is {round(bmi)}, you are overweight')
+else:
+ print(f'your bmi is {round(bmi)}, you are really obese')
